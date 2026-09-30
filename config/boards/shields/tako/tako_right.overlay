@@ -44,7 +44,7 @@
   #address-cells = <1>;
   #size-cells = <0>;
   status = "okay";
-  
+
   channel@1 {
     reg = <1>;
     zephyr,gain = "ADC_GAIN_1_6";
@@ -55,6 +55,6 @@
   };
 };
 
-// &nice_view_spi {
-//     cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
-// };
+&nice_view_spi {
+    cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+};
